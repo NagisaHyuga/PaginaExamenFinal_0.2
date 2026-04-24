@@ -1,0 +1,173 @@
+
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <title>Diseñadores</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap" rel="stylesheet">
+
+    <style>
+       
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: #162749;
+            font-family: sans-serif;
+            display: flex;
+            flex-direction: column; 
+        }
+
+        .content-wrapper {
+            flex: 1;
+            padding: 36px;
+        }
+
+        .info-container {
+            display: none;
+            width: 413px;
+            color: white;
+            margin: 20px auto;
+            background-color: #1A1A40;
+            padding: 30px 20px 50px 20px;
+            border-radius: 10px;
+            text-align: center;
+            font-family: "Play", sans-serif;
+            font-weight: 400;
+        }
+
+            .info-container img {
+                max-width: 100%;
+                height: auto;
+                margin-bottom: 15px;
+            }
+
+            .info-container h2 {
+                margin: 15px 0;
+            }
+
+            .info-container p {
+                margin-bottom: 20px;
+                line-height: 1.5;
+            }
+
+        nav a {
+            cursor: pointer;
+            text-decoration: none;
+        }
+
+        footer {
+            background-color: #000000;
+            text-align: center;
+            padding: 30px;
+        }
+
+            footer img {
+                margin: 0px 60px;
+            }
+    </style>
+</head>
+<body>
+
+    <div class="content-wrapper">
+        <header style="text-align: center;">
+            <img src="Aura_Imagenes/LOGO.png" alt="logo de llama" />
+            <h2 style="margin-top: 36px; font-family: 'Orbitron', sans-serif; color: #008072;">DISEÑADORES</h2>
+        </header>
+
+        <h3 style="color:#AFD271">Nuestros Arquitectos de Auroras</h3>
+        <p style="color:#F1DBA8">En Aura Synthetica, nuestros diseñadores no solo crean imágenes; actúan como traductores de emociones. Son mentes curiosas que buscan canalizar la energía vibrante de lo intangible para materializarla en experiencias digitales. Su misión es encontrar ese equilibrio perfecto entre la narrativa simbólica y la vanguardia técnica, asegurando que cada trazo tenga un propósito y cada color una intención.</p>
+
+        <nav style="text-align: center; margin-top: 50px; margin-bottom: 100px">
+
+            <a onclick="toggleInfo('polet')"><img src="Aura_Imagenes/BTN_Po.png" alt="Boton Polet" /></a>
+            <div id="polet" class="info-container">
+                <img src="Aura_Imagenes/IMAGE_PO.png" alt="Foto de po" />
+                <h2 style="color:#AFD271">Polet</h2>
+                <p style="color:#F1DBA8">Soy una narradora visual que transforma símbolos y emociones en marcas con alma. Mi trabajo busca conectar con las personas a través de historias profundas, donde cada color y cada forma tienen un significado.</p>
+                <a href="proyectosPO.html"><img src="Aura_Imagenes/BTN_Portafolio.png" alt="Portafolio" /></a><br>
+                <a href="contactoPOLET.html"><img src="Aura_Imagenes/BTN_Contacto.png" alt="Contacto" /></a>
+            </div>
+            <br>
+
+            <a onclick="toggleInfo('kimi')"><img src="Aura_Imagenes/BTN_Kimi.png" alt="Boton Kimi" /></a>
+            <div id="kimi" class="info-container">
+                <img src="Aura_Imagenes/IMAGE_KIMI.png" alt="Foto de Kimi" />
+                <h2 style="color:#AFD271">Kimi</h2>
+                <p style="color:#F1DBA8">Diseño para el ojo, animo para el alma. Mezclo texturas análogas con mundos digitales para crear experiencias visuales que no solo se ven, se experimentan.</p>
+                <a href="proyectosKIMI.html"><img src="Aura_Imagenes/BTN_Portafolio.png" alt="Portafolio" /></a><br>
+                <a href="contactoKIMI.html"><img src="Aura_Imagenes/BTN_Contacto.png" alt="Contacto" /></a>
+            </div>
+            <br>
+
+            <a onclick="toggleInfo('luis')"><img src="Aura_Imagenes/BTN_Luis.png" alt="Boton Luis" /></a>
+            <div id="luis" class="info-container">
+                <img src="Aura_Imagenes/IMAGE_LUIS.png" alt="Foto de luis" />
+                <h2 style="color:#AFD271">Luis</h2>
+                <p style="color:#F1DBA8">Artista digital que revela lo oculto con imágenes intensas. Mis piezas combinan concepto y performance: son precisas y a la vez cercanas.</p>
+                <a href="proyectosLUIS.html"><img src="Aura_Imagenes/BTN_Portafolio.png" alt="Portafolio" /></a><br>
+                <a href="contactoLUIS.html"><img src="Aura_Imagenes/BTN_Contacto.png" alt="Contacto" /></a>
+            </div>
+            <br>
+
+            <a onclick="toggleInfo('ada')"><img src="Aura_Imagenes/BTN_Ada.png" alt="Boton Ada" /></a>
+            <div id="ada" class="info-container">
+                <img src="Aura_Imagenes/IMAGE_ADA.png" alt="Foto de ada" />
+                <h2 style="color:#AFD271">Adamari</h2>
+                <p style="color:#F1DBA8">Soy una creadora visual enfocada en la técnica digital y la estética del arte oscuro. Me considero una profesional altamente colaborativa y entusiasta.</p>
+                <a href="proyectosADA.html"><img src="Aura_Imagenes/BTN_Portafolio.png" alt="Portafolio" /></a><br>
+                <a href="contactoADA.html"><img src="Aura_Imagenes/BTN_Contacto.png" alt="Contacto" /></a>
+            </div>
+            <br>
+
+            <a onclick="toggleInfo('ale')"><img src="Aura_Imagenes/BTN_Aleja.png" alt="Boton Aleja" /></a>
+            <div id="ale" class="info-container">
+                <img src="Aura_Imagenes/IMAGE_ALEJA.png" alt="Foto de aleja" />
+                <h2 style="color:#AFD271">Alejandra</h2>
+                <p style="color:#F1DBA8">Tengo un profundo interés por las artes visuales, así como una gran pasión por la creación de contenido digital y audiovisual.</p>
+                <a href="proyectosALEJA.html"><img src="Aura_Imagenes/BTN_portafolio.png" alt="Portafolio" /></a><br>
+                <a href="contactoALEJA.html"><img src="Aura_Imagenes/BTN_Contacto.png" alt="Contacto" /></a>
+            </div>
+
+        </nav>
+
+        <a style="padding: 30px; display: inline-block;" href="index.html">
+            <img src="Aura_Imagenes/BTN_volver.png" alt="Boton para volver" />
+        </a>
+    </div>
+
+    <footer>
+        <a href="https://www.whatsapp.com/?lang=es" target="_blank">
+            <img src="Aura_Imagenes/BTN_whats.png" alt="Whatsapp" />
+        </a>
+        <a href="https://www.instagram.com/" target="_blank">
+            <img src="Aura_Imagenes/BTN_insta.png" alt="Instagram" />
+        </a>
+        <a href="https://workspace.google.com/intl/es/gmail/" target="_blank">
+            <img src="Aura_Imagenes/BTN_gmail.png" alt="Gmail" />
+        </a>
+    </footer>
+
+    <script>
+        function toggleInfo(id) {
+            const todos = document.querySelectorAll('.info-container');
+            todos.forEach(div => {
+                if (div.id !== id) div.style.display = 'none';
+            });
+
+            const elemento = document.getElementById(id);
+            if (elemento.style.display === 'block') {
+                elemento.style.display = 'none';
+            } else {
+                elemento.style.display = 'block';
+            }
+        }
+    </script>
+</body>
+</html>
